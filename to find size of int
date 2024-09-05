@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main() { 
+int inttype;
+float floattype;
+double doubletype;
+char chartype;
+/ / size of evaluates the size of a variable 
+printf("4 bytes : %zu bytes\n", sizeof(inttype));
+printf("4 bytes : %zu bytes\n",sizeof(floattype));
+printf("8 bytes : %zu bytes\n",sizeof(doubletype));
+printf("1 bytes : %zu bytes\n",sizeof(chartype));
+
+return0;
+}
