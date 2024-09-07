@@ -1,0 +1,12 @@
+#include <stdio.h>
+#define PI 3.14159
+int main() { 
+double radius,area,circumference;
+printf("enter the radius of circle:");
+scanf("enter the radius of circle:");
+scanf("%if",&radius);
+circumference = 2 * pi * radius ; 
+printf("Area of circle:%.2if\n", area);
+printf("Circumference of the circle:%.2fn\n',circumference);
+return0;
+}
