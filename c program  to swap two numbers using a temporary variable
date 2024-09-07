@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main() {
+  int 10,30, temp;
+printf("Enter the value of x and y: 10,30 ");
+scanf("Before swapping x=10%d,y=30%d ", 10,30);
+temp=x;
+x=y;
+y=temp;
+printf("After swapping x= 30%d,y=10%d,30,10);
+  return0;
+}
