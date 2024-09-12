@@ -1,11 +1,29 @@
-#include<stdio.h>
+#include <stdio.h>
+
 int main() {
-  int 10,30, temp;
-printf("Enter the value of x and y: 10,30 ");
-scanf("Before swapping x=10%d,y=30%d ", 10,30);
-temp=x;
-x=y;
-y=temp;
-printf("After swapping x= 30%d,y=10%d,30,10);
-  return0;
+    int a, b, temp;
+
+    // Input the numbers
+    printf("Enter the value of a: ");
+    scanf("%d", &a);
+    printf("Enter the value of b: ");
+    scanf("%d", &b);
+
+    // Display values before swapping
+    printf("\nBefore swapping:\n");
+    printf("a = %d\n", a);
+    printf("b = %d\n", b);
+
+    // Swap the values using a temporary variable
+    temp = a;
+    a = b;
+    b = temp;
+
+    // Display values after swapping
+    printf("\nAfter swapping:\n");
+    printf("a = %d\n", a);
+    printf("b = %d\n", b);
+
+    return 0;
 }
+
