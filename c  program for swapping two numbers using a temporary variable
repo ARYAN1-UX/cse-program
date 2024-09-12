@@ -6,7 +6,7 @@ int main() {
 a=11;
 b=99;
 
-prinyf("values before swapping - \n a =%d, b= %d \n\n",a,b);
+printf("values before swapping - \n a =%d, b= %d \n\n",a,b);
 
 temp = a;
 a = b;
