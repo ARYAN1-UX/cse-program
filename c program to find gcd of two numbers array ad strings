@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <string.h>
+
+int findGCD(int a, int b) {
+    if (b == 0)
+        return a;
+    return findGCD(b, a % b);
+}
+
+int main() {
+    int num1, num2, gcd;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+    gcd = findGCD(num1, num2);
+    printf("GCD of %d and %d is: %d\n", num1, num2, gcd);
+
+
+    int arr[5], i;
+    printf("Enter 5 elements for the array: ");
+    for (i = 0; i < 5; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    gcd = findGCD(arr[0], arr[1]);
+    printf("GCD of %d and %d from the array is: %d\n", arr[0], arr[1], gcd);
+
+    char str1[100], str2[100];
+    printf("Enter first string: ");
+    scanf("%s", str1);
+    printf("Enter second string: ");
+    scanf("%s", str2);
+
+    int len1 = strlen(str1);
+    int len2 = strlen(str2);
+
+    gcd = findGCD(len1, len2);
+    printf("GCD of the lengths of '%s' and '%s' is: %d\n", str1, str2, gcd);
+
+    return 0;
+}
